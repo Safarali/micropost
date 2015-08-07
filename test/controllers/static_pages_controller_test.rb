@@ -17,6 +17,13 @@ class StaticPagesControllerTest < ActionController::TestCase
   	get :about
   	assert_response :success
     assert_select "title", "About | Welcome to TinyTwitter"
-
   end
+
+  test "should get contact" do
+    get :about
+    assert_response :success
+    assert_select "title", "About | Welcome to TinyTwitter"
+  end
+
+
 end

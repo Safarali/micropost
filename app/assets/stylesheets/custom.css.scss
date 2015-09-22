@@ -1,8 +1,9 @@
 $body-bg:	 white;
 $font-family-sans-serif: 			'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-default-link-color: white;
-$navbar-default-bg: #55acee;
-$brand-primary: #55acee;
+$navbar-default-link-hover-color: #bdc3c7;
+$navbar-default-bg: #2980b9;
+$brand-primary: #2980b9;
 
 
 @import "bootstrap-sprockets";
@@ -12,14 +13,18 @@ $brand-primary: #55acee;
  
 
 .navbar-brand {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	letter-spacing: 2px;
 	font-family: 'Righteous', cursive;
-	font-weight: bold;
+	
 }
 
 
 /* universal */
+
+.jumbotron h1{
+  font-size: 3.0em;
+}
 
 body {
 	padding-top: 60px;

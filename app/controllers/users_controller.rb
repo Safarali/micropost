@@ -10,12 +10,14 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   	if @user.save
+      log_in @user
   		flash[:success] = "Welcome to hiTwitter!"
   		redirect_to @user
   	else
   		render 'new'
   	end
   end
+
 
   private # not be exposed to external users via the web
 

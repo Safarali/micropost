@@ -2,7 +2,11 @@
 
 				<h1>Welcome to hiTwitter</h1>
 				<h2>Twitter's clone</h2>
+				<% if logged_in? %>
+				<h3>Here you will see tweets from all users!</h3>
+				<% else %>
 				<%= link_to "Sign Up Now!",signup_path, class: "btn btn-lg btn-primary" %>
+				<% end %>
 </div>
 	 
 	 

@@ -9,6 +9,8 @@ class UsersController < ApplicationController
 
 	def show
 		@user = User.find(params[:id])
+    # In order to show user's microposts in user's profile, we must implement this code. 
+    @microposts = @user.microposts.paginate(page: params[:page])
 	end
 
   def new

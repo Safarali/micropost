@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.3'
 # By hashing the password with bcrypt, we ensure that an attacker won’t be able to log in to the site even if they manage to obtain a copy of the database.
 gem 'bcrypt', '3.1.7'
-# Fake users.
-gem 'faker', '1.4.2'
 # For images
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'

@@ -5,7 +5,7 @@ def edit
     if user && !user.activated? && user.authenticated?(:activation, params[:id])
       user.activate
       log_in user
-      flash[:success] = "Account activated!"
+      flash[:success] = "Account activated! Say Hello to Everybody!"
       redirect_to root_url
     else
       flash[:danger] = "Invalid activation link"

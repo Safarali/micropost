@@ -1,12 +1,3 @@
-// Navbar
-$navbar-default-link-color: white;
-$navbar-default-link-hover-color: #bdc3c7;
-$navbar-default-bg: #2980b9;
-
-
-$brand-primary: #2980b9;
-$body-bg:  white;
-
 
 // Imports
 @import "bootstrap-sprockets";
@@ -21,17 +12,67 @@ $body-bg:  white;
 //Fonts
 @import url('//fonts.googleapis.com/css?family=Righteous');
 @import url('//fonts.googleapis.com/css?family=Lato');
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 $font-family-sans-serif:      'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
  
- // Navbar-brand
+ /* Navbar */
 
-.navbar-brand {
+.navbar-default .navbar-brand {
 	font-size: 1.8em;
 	letter-spacing: 2px;
 	font-family: 'Righteous', cursive;
-	
+  color: #2980b9;
 }
+.navbar-default .navbar-brand:hover {
+  color: #3498db;
+}
+
+.navbar .nav > li > a {
+  color: #3498db;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+.navbar-default {
+  background-color: #FFFFFF;
+  border-bottom: none;
+  
+}
+
+
+/* Toggle Button */
+
+.navbar-default .navbar-toggle {
+  background-color: white;
+  border: white;
+  background: white;
+  }
+
+.navbar-default .navbar-toggle:hover {
+  background-color: white;
+  border: white;
+  }
+
+.navbar-default .navbar-toggle:active {
+  background-color: white;
+  border: white;
+  }
+
+.navbar-default .navbar-toggle:focus {
+  background-color: white;
+  border: white;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #3498db;
+    padding-right: 30px;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar:hover {
+    background-color: #3498db;
+  }
+
 
 /* universal */
 
@@ -188,10 +229,16 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid #3498db;
+  outline: none !important;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;
+
+}
+
+textarea:focus {
+  border: 2px solid #3498db;
 }
 
 input {
@@ -288,4 +335,96 @@ span.picture {
 .glyphicon {
   color: $gray-light;
   font-size: 10px;
+}
+
+
+
+.banner {
+  background-image: url('hero-banner2.jpeg');
+  text-align: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center;
+  opacity: 0.8;
+    height: 550px;
+    left: 0;
+    right: 0;
+    padding-top: 0px;
+
+}
+
+ .banner h1 {
+  font-size: 65px;
+  line-height: 66px;
+  color: white;
+  margin-top: 125px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+}
+
+.banner p {
+  font-size: 25px;
+  line-height: 25px;
+  color: white;
+  margin-bottom: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 75px;
+  }
+
+  .banner p {
+    font-size: 20px;
+  }
+
+}
+
+.wrapper {
+  padding-bottom: 680px;
+}
+
+/* Join now buttom */
+
+#join_now {
+  color: black;
+  border: 4px solid white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.8;
+  font-weight: bold;
+  background: white;
+  line-height: 20px;
+  border-radius: 1px;
+  margin-bottom: 0;
+  width: 200px;
+}
+
+#join_now:hover {
+background-color: black;
+  font-weight: bold;
+  color: white;
+  border: 4px solid black;
+  font-size: 20px;
+  opacity: 0.6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Some forms */
+
+.form-control {
+  border-radius: 2px;
+  line-height: 25px;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border:2px solid #3498db;
+  box-shadow: none;
+ 
 }

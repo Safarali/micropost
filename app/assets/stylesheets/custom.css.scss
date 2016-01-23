@@ -340,7 +340,7 @@ span.picture {
 
 
 .banner {
-  background-image: url('hero-banner2.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-banner2.jpeg');
   text-align: center;
   background-size: cover;
   background-attachment: scroll;

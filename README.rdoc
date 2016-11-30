@@ -1,1 +1,8 @@
-Michael Harlts Rails tutorial. In this tutorial, we built twitter-stylle 
+Michael Harlts Rails tutorial. In this tutorial we built twitter-stylle web app where users can create microposts and follow each other.
+
+- Rails 4
+- Ajax
+- jQuery
+- SendGrid
+
+Live: youpost.heroku.com
